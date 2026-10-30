@@ -1,0 +1,1472 @@
+{
+  "experiment": "GTZAN + FMA-Small + Saraga Hindustani + Saraga Carnatic 12-label hybrid",
+  "model_type": "yamnet_panns_logistic",
+  "selected_candidate": "hybrid",
+  "selected_C": 0.001,
+  "candidate_selection": "Grid search on validation tracks only; equal-weight mean of source-specific macro-F1 for the four sources. Long-track windows are averaged to one track prediction.",
+  "candidate_scores": [
+    {
+      "feature_set": "hybrid",
+      "C": 0.001,
+      "source_validation": {
+        "gtzan": {
+          "track_count": 148,
+          "release_group_count": null,
+          "classes_scored": [
+            "Western classical",
+            "blues",
+            "country",
+            "disco",
+            "hiphop",
+            "jazz",
+            "metal",
+            "pop",
+            "reggae",
+            "rock"
+          ],
+          "accuracy": 0.8851351351351351,
+          "macro_precision": 0.8989842252690551,
+          "macro_recall": 0.8838095238095238,
+          "macro_f1": 0.8869731073742066,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Western classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "blues": {
+              "precision": 0.9285714285714286,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.896551724137931,
+              "support": 15.0
+            },
+            "country": {
+              "precision": 0.9333333333333333,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9333333333333333,
+              "support": 15.0
+            },
+            "disco": {
+              "precision": 0.9285714285714286,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.896551724137931,
+              "support": 15.0
+            },
+            "hiphop": {
+              "precision": 0.9333333333333333,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9333333333333333,
+              "support": 15.0
+            },
+            "jazz": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "metal": {
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.8333333333333334,
+              "support": 14.0
+            },
+            "pop": {
+              "precision": 0.7058823529411765,
+              "recall": 0.8571428571428571,
+              "f1-score": 0.7741935483870968,
+              "support": 14.0
+            },
+            "reggae": {
+              "precision": 0.9285714285714286,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.896551724137931,
+              "support": 15.0
+            },
+            "rock": {
+              "precision": 0.631578947368421,
+              "recall": 0.8,
+              "f1-score": 0.7058823529411765,
+              "support": 15.0
+            },
+            "accuracy": 0.8851351351351351,
+            "macro avg": {
+              "precision": 0.8989842252690551,
+              "recall": 0.8838095238095238,
+              "f1-score": 0.8869731073742066,
+              "support": 148.0
+            },
+            "weighted avg": {
+              "precision": 0.8996064286311964,
+              "recall": 0.8851351351351351,
+              "f1-score": 0.8880975623270984,
+              "support": 148.0
+            }
+          }
+        },
+        "fma_small": {
+          "track_count": 450,
+          "release_group_count": null,
+          "classes_scored": [
+            "hiphop",
+            "pop",
+            "rock"
+          ],
+          "accuracy": 0.7288888888888889,
+          "macro_precision": 0.7482347411541396,
+          "macro_recall": 0.7288888888888888,
+          "macro_f1": 0.7371519275550656,
+          "predictions_outside_source_labels": 11,
+          "classification_report": {
+            "hiphop": {
+              "precision": 0.8840579710144928,
+              "recall": 0.8133333333333334,
+              "f1-score": 0.8472222222222222,
+              "support": 150.0
+            },
+            "pop": {
+              "precision": 0.635036496350365,
+              "recall": 0.58,
+              "f1-score": 0.6062717770034843,
+              "support": 150.0
+            },
+            "rock": {
+              "precision": 0.725609756097561,
+              "recall": 0.7933333333333333,
+              "f1-score": 0.7579617834394905,
+              "support": 150.0
+            },
+            "micro avg": {
+              "precision": 0.7471526195899773,
+              "recall": 0.7288888888888889,
+              "f1-score": 0.7379077615298087,
+              "support": 450.0
+            },
+            "macro avg": {
+              "precision": 0.7482347411541396,
+              "recall": 0.7288888888888888,
+              "f1-score": 0.7371519275550656,
+              "support": 450.0
+            },
+            "weighted avg": {
+              "precision": 0.7482347411541395,
+              "recall": 0.7288888888888889,
+              "f1-score": 0.7371519275550656,
+              "support": 450.0
+            }
+          }
+        },
+        "saraga": {
+          "track_count": 12,
+          "release_group_count": 6,
+          "classes_scored": [
+            "Hindustani classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Hindustani classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            }
+          }
+        },
+        "saraga_carnatic": {
+          "track_count": 30,
+          "release_group_count": 4,
+          "classes_scored": [
+            "Carnatic classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Carnatic classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            }
+          }
+        }
+      },
+      "mean_source_macro_f1": 0.906031258732318,
+      "mean_source_accuracy": 0.9035060060060061
+    },
+    {
+      "feature_set": "hybrid",
+      "C": 0.01,
+      "source_validation": {
+        "gtzan": {
+          "track_count": 148,
+          "release_group_count": null,
+          "classes_scored": [
+            "Western classical",
+            "blues",
+            "country",
+            "disco",
+            "hiphop",
+            "jazz",
+            "metal",
+            "pop",
+            "reggae",
+            "rock"
+          ],
+          "accuracy": 0.8513513513513513,
+          "macro_precision": 0.8698849688323372,
+          "macro_recall": 0.85,
+          "macro_f1": 0.8547947454844007,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Western classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "blues": {
+              "precision": 0.9285714285714286,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.896551724137931,
+              "support": 15.0
+            },
+            "country": {
+              "precision": 0.9333333333333333,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9333333333333333,
+              "support": 15.0
+            },
+            "disco": {
+              "precision": 0.9230769230769231,
+              "recall": 0.8,
+              "f1-score": 0.8571428571428571,
+              "support": 15.0
+            },
+            "hiphop": {
+              "precision": 0.8571428571428571,
+              "recall": 0.8,
+              "f1-score": 0.8275862068965517,
+              "support": 15.0
+            },
+            "jazz": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "metal": {
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.8333333333333334,
+              "support": 14.0
+            },
+            "pop": {
+              "precision": 0.5789473684210527,
+              "recall": 0.7857142857142857,
+              "f1-score": 0.6666666666666666,
+              "support": 14.0
+            },
+            "reggae": {
+              "precision": 0.8666666666666667,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.8666666666666667,
+              "support": 15.0
+            },
+            "rock": {
+              "precision": 0.6111111111111112,
+              "recall": 0.7333333333333333,
+              "f1-score": 0.6666666666666666,
+              "support": 15.0
+            },
+            "accuracy": 0.8513513513513513,
+            "macro avg": {
+              "precision": 0.8698849688323372,
+              "recall": 0.85,
+              "f1-score": 0.8547947454844007,
+              "support": 148.0
+            },
+            "weighted avg": {
+              "precision": 0.870971607813713,
+              "recall": 0.8513513513513513,
+              "f1-score": 0.8562108906936493,
+              "support": 148.0
+            }
+          }
+        },
+        "fma_small": {
+          "track_count": 450,
+          "release_group_count": null,
+          "classes_scored": [
+            "hiphop",
+            "pop",
+            "rock"
+          ],
+          "accuracy": 0.7466666666666667,
+          "macro_precision": 0.7541671932793182,
+          "macro_recall": 0.7466666666666666,
+          "macro_f1": 0.7494462722552017,
+          "predictions_outside_source_labels": 4,
+          "classification_report": {
+            "hiphop": {
+              "precision": 0.8811188811188811,
+              "recall": 0.84,
+              "f1-score": 0.8600682593856656,
+              "support": 150.0
+            },
+            "pop": {
+              "precision": 0.6618705035971223,
+              "recall": 0.6133333333333333,
+              "f1-score": 0.6366782006920415,
+              "support": 150.0
+            },
+            "rock": {
+              "precision": 0.7195121951219512,
+              "recall": 0.7866666666666666,
+              "f1-score": 0.7515923566878981,
+              "support": 150.0
+            },
+            "micro avg": {
+              "precision": 0.7533632286995515,
+              "recall": 0.7466666666666667,
+              "f1-score": 0.75,
+              "support": 450.0
+            },
+            "macro avg": {
+              "precision": 0.7541671932793182,
+              "recall": 0.7466666666666666,
+              "f1-score": 0.7494462722552017,
+              "support": 450.0
+            },
+            "weighted avg": {
+              "precision": 0.7541671932793182,
+              "recall": 0.7466666666666667,
+              "f1-score": 0.7494462722552017,
+              "support": 450.0
+            }
+          }
+        },
+        "saraga": {
+          "track_count": 12,
+          "release_group_count": 6,
+          "classes_scored": [
+            "Hindustani classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Hindustani classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            }
+          }
+        },
+        "saraga_carnatic": {
+          "track_count": 30,
+          "release_group_count": 4,
+          "classes_scored": [
+            "Carnatic classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Carnatic classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            }
+          }
+        }
+      },
+      "mean_source_macro_f1": 0.9010602544349006,
+      "mean_source_accuracy": 0.8995045045045045
+    },
+    {
+      "feature_set": "hybrid",
+      "C": 0.1,
+      "source_validation": {
+        "gtzan": {
+          "track_count": 148,
+          "release_group_count": null,
+          "classes_scored": [
+            "Western classical",
+            "blues",
+            "country",
+            "disco",
+            "hiphop",
+            "jazz",
+            "metal",
+            "pop",
+            "reggae",
+            "rock"
+          ],
+          "accuracy": 0.8445945945945946,
+          "macro_precision": 0.8681608669108669,
+          "macro_recall": 0.8428571428571429,
+          "macro_f1": 0.8489708582728606,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Western classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "blues": {
+              "precision": 1.0,
+              "recall": 0.8,
+              "f1-score": 0.8888888888888888,
+              "support": 15.0
+            },
+            "country": {
+              "precision": 0.9333333333333333,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9333333333333333,
+              "support": 15.0
+            },
+            "disco": {
+              "precision": 0.9230769230769231,
+              "recall": 0.8,
+              "f1-score": 0.8571428571428571,
+              "support": 15.0
+            },
+            "hiphop": {
+              "precision": 0.8571428571428571,
+              "recall": 0.8,
+              "f1-score": 0.8275862068965517,
+              "support": 15.0
+            },
+            "jazz": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "metal": {
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.8333333333333334,
+              "support": 14.0
+            },
+            "pop": {
+              "precision": 0.5555555555555556,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.625,
+              "support": 14.0
+            },
+            "reggae": {
+              "precision": 0.8125,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.8387096774193549,
+              "support": 15.0
+            },
+            "rock": {
+              "precision": 0.6,
+              "recall": 0.8,
+              "f1-score": 0.6857142857142857,
+              "support": 15.0
+            },
+            "accuracy": 0.8445945945945946,
+            "macro avg": {
+              "precision": 0.8681608669108669,
+              "recall": 0.8428571428571429,
+              "f1-score": 0.8489708582728606,
+              "support": 148.0
+            },
+            "weighted avg": {
+              "precision": 0.8693822600072599,
+              "recall": 0.8445945945945946,
+              "f1-score": 0.8505898338351063,
+              "support": 148.0
+            }
+          }
+        },
+        "fma_small": {
+          "track_count": 450,
+          "release_group_count": null,
+          "classes_scored": [
+            "hiphop",
+            "pop",
+            "rock"
+          ],
+          "accuracy": 0.7555555555555555,
+          "macro_precision": 0.7602292822120408,
+          "macro_recall": 0.7555555555555555,
+          "macro_f1": 0.7574020131978098,
+          "predictions_outside_source_labels": 2,
+          "classification_report": {
+            "hiphop": {
+              "precision": 0.8811188811188811,
+              "recall": 0.84,
+              "f1-score": 0.8600682593856656,
+              "support": 150.0
+            },
+            "pop": {
+              "precision": 0.6620689655172414,
+              "recall": 0.64,
+              "f1-score": 0.6508474576271186,
+              "support": 150.0
+            },
+            "rock": {
+              "precision": 0.7375,
+              "recall": 0.7866666666666666,
+              "f1-score": 0.7612903225806451,
+              "support": 150.0
+            },
+            "micro avg": {
+              "precision": 0.7589285714285714,
+              "recall": 0.7555555555555555,
+              "f1-score": 0.7572383073496659,
+              "support": 450.0
+            },
+            "macro avg": {
+              "precision": 0.7602292822120408,
+              "recall": 0.7555555555555555,
+              "f1-score": 0.7574020131978098,
+              "support": 450.0
+            },
+            "weighted avg": {
+              "precision": 0.7602292822120409,
+              "recall": 0.7555555555555555,
+              "f1-score": 0.7574020131978099,
+              "support": 450.0
+            }
+          }
+        },
+        "saraga": {
+          "track_count": 12,
+          "release_group_count": 6,
+          "classes_scored": [
+            "Hindustani classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Hindustani classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            }
+          }
+        },
+        "saraga_carnatic": {
+          "track_count": 30,
+          "release_group_count": 4,
+          "classes_scored": [
+            "Carnatic classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Carnatic classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            }
+          }
+        }
+      },
+      "mean_source_macro_f1": 0.9015932178676676,
+      "mean_source_accuracy": 0.9000375375375376
+    },
+    {
+      "feature_set": "hybrid",
+      "C": 1.0,
+      "source_validation": {
+        "gtzan": {
+          "track_count": 148,
+          "release_group_count": null,
+          "classes_scored": [
+            "Western classical",
+            "blues",
+            "country",
+            "disco",
+            "hiphop",
+            "jazz",
+            "metal",
+            "pop",
+            "reggae",
+            "rock"
+          ],
+          "accuracy": 0.8445945945945946,
+          "macro_precision": 0.8664304993252362,
+          "macro_recall": 0.8433333333333334,
+          "macro_f1": 0.848568316215375,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Western classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "blues": {
+              "precision": 0.9230769230769231,
+              "recall": 0.8,
+              "f1-score": 0.8571428571428571,
+              "support": 15.0
+            },
+            "country": {
+              "precision": 0.9333333333333333,
+              "recall": 0.9333333333333333,
+              "f1-score": 0.9333333333333333,
+              "support": 15.0
+            },
+            "disco": {
+              "precision": 0.9166666666666666,
+              "recall": 0.7333333333333333,
+              "f1-score": 0.8148148148148148,
+              "support": 15.0
+            },
+            "hiphop": {
+              "precision": 0.8666666666666667,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.8666666666666667,
+              "support": 15.0
+            },
+            "jazz": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 15.0
+            },
+            "metal": {
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.8333333333333334,
+              "support": 14.0
+            },
+            "pop": {
+              "precision": 0.5789473684210527,
+              "recall": 0.7857142857142857,
+              "f1-score": 0.6666666666666666,
+              "support": 14.0
+            },
+            "reggae": {
+              "precision": 0.8666666666666667,
+              "recall": 0.8666666666666667,
+              "f1-score": 0.8666666666666667,
+              "support": 15.0
+            },
+            "rock": {
+              "precision": 0.5789473684210527,
+              "recall": 0.7333333333333333,
+              "f1-score": 0.6470588235294118,
+              "support": 15.0
+            },
+            "accuracy": 0.8445945945945946,
+            "macro avg": {
+              "precision": 0.8664304993252362,
+              "recall": 0.8433333333333334,
+              "f1-score": 0.848568316215375,
+              "support": 148.0
+            },
+            "weighted avg": {
+              "precision": 0.8674704562862456,
+              "recall": 0.8445945945945946,
+              "f1-score": 0.8499003204885558,
+              "support": 148.0
+            }
+          }
+        },
+        "fma_small": {
+          "track_count": 450,
+          "release_group_count": null,
+          "classes_scored": [
+            "hiphop",
+            "pop",
+            "rock"
+          ],
+          "accuracy": 0.7422222222222222,
+          "macro_precision": 0.749205134981577,
+          "macro_recall": 0.7422222222222222,
+          "macro_f1": 0.7453615429543478,
+          "predictions_outside_source_labels": 3,
+          "classification_report": {
+            "hiphop": {
+              "precision": 0.8732394366197183,
+              "recall": 0.8266666666666667,
+              "f1-score": 0.8493150684931506,
+              "support": 150.0
+            },
+            "pop": {
+              "precision": 0.6418918918918919,
+              "recall": 0.6333333333333333,
+              "f1-score": 0.6375838926174496,
+              "support": 150.0
+            },
+            "rock": {
+              "precision": 0.732484076433121,
+              "recall": 0.7666666666666667,
+              "f1-score": 0.749185667752443,
+              "support": 150.0
+            },
+            "micro avg": {
+              "precision": 0.7472035794183445,
+              "recall": 0.7422222222222222,
+              "f1-score": 0.7447045707915273,
+              "support": 450.0
+            },
+            "macro avg": {
+              "precision": 0.749205134981577,
+              "recall": 0.7422222222222222,
+              "f1-score": 0.7453615429543478,
+              "support": 450.0
+            },
+            "weighted avg": {
+              "precision": 0.749205134981577,
+              "recall": 0.7422222222222222,
+              "f1-score": 0.7453615429543478,
+              "support": 450.0
+            }
+          }
+        },
+        "saraga": {
+          "track_count": 12,
+          "release_group_count": 6,
+          "classes_scored": [
+            "Hindustani classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Hindustani classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            }
+          }
+        },
+        "saraga_carnatic": {
+          "track_count": 30,
+          "release_group_count": 4,
+          "classes_scored": [
+            "Carnatic classical"
+          ],
+          "accuracy": 1.0,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "predictions_outside_source_labels": 0,
+          "classification_report": {
+            "Carnatic classical": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 30.0
+            }
+          }
+        }
+      },
+      "mean_source_macro_f1": 0.8984824647924307,
+      "mean_source_accuracy": 0.8967042042042042
+    }
+  ],
+  "test_accuracy_pooled": 0.7952871870397643,
+  "test_macro_precision_pooled": 0.7911337109061184,
+  "test_macro_recall_pooled": 0.868333597297012,
+  "test_macro_f1_pooled": 0.8238067143731436,
+  "test_accuracy_equal_source_mean": 0.8921696696696697,
+  "test_macro_f1_equal_source_mean": 0.8935712350624985,
+  "classes": [
+    "Carnatic classical",
+    "Hindustani classical",
+    "Western classical",
+    "blues",
+    "country",
+    "disco",
+    "hiphop",
+    "jazz",
+    "metal",
+    "pop",
+    "reggae",
+    "rock"
+  ],
+  "class_hierarchy": {
+    "Western classical": "Classical",
+    "Hindustani classical": "Classical",
+    "Carnatic classical": "Classical"
+  },
+  "test_track_count": 679,
+  "test_tracks_by_source": {
+    "fma_small": 450,
+    "gtzan": 148,
+    "saraga": 25,
+    "saraga_carnatic": 56
+  },
+  "source_metrics": {
+    "gtzan": {
+      "track_count": 148,
+      "release_group_count": null,
+      "classes_scored": [
+        "Western classical",
+        "blues",
+        "country",
+        "disco",
+        "hiphop",
+        "jazz",
+        "metal",
+        "pop",
+        "reggae",
+        "rock"
+      ],
+      "accuracy": 0.8175675675675675,
+      "macro_precision": 0.8197565227170489,
+      "macro_recall": 0.818095238095238,
+      "macro_f1": 0.8102101539524196,
+      "predictions_outside_source_labels": 0,
+      "classification_report": {
+        "Western classical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "blues": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 15.0
+        },
+        "country": {
+          "precision": 0.5625,
+          "recall": 0.6,
+          "f1-score": 0.5806451612903226,
+          "support": 15.0
+        },
+        "disco": {
+          "precision": 0.7777777777777778,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.8484848484848485,
+          "support": 15.0
+        },
+        "hiphop": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.9230769230769231,
+          "support": 14.0
+        },
+        "jazz": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "metal": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.9230769230769231,
+          "support": 14.0
+        },
+        "pop": {
+          "precision": 0.6842105263157895,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.7647058823529411,
+          "support": 15.0
+        },
+        "reggae": {
+          "precision": 0.9230769230769231,
+          "recall": 0.8,
+          "f1-score": 0.8571428571428571,
+          "support": 15.0
+        },
+        "rock": {
+          "precision": 0.5,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.34782608695652173,
+          "support": 15.0
+        },
+        "accuracy": 0.8175675675675675,
+        "macro avg": {
+          "precision": 0.8197565227170489,
+          "recall": 0.818095238095238,
+          "f1-score": 0.8102101539524196,
+          "support": 148.0
+        },
+        "weighted avg": {
+          "precision": 0.8173208000510631,
+          "recall": 0.8175675675675675,
+          "f1-score": 0.8086849273426289,
+          "support": 148.0
+        }
+      }
+    },
+    "fma_small": {
+      "track_count": 450,
+      "release_group_count": null,
+      "classes_scored": [
+        "hiphop",
+        "pop",
+        "rock"
+      ],
+      "accuracy": 0.7511111111111111,
+      "macro_precision": 0.779839320536995,
+      "macro_recall": 0.7511111111111112,
+      "macro_f1": 0.7640747862975745,
+      "predictions_outside_source_labels": 17,
+      "classification_report": {
+        "hiphop": {
+          "precision": 0.8851351351351351,
+          "recall": 0.8733333333333333,
+          "f1-score": 0.8791946308724832,
+          "support": 150.0
+        },
+        "pop": {
+          "precision": 0.7364341085271318,
+          "recall": 0.6333333333333333,
+          "f1-score": 0.6810035842293907,
+          "support": 150.0
+        },
+        "rock": {
+          "precision": 0.717948717948718,
+          "recall": 0.7466666666666667,
+          "f1-score": 0.7320261437908496,
+          "support": 150.0
+        },
+        "micro avg": {
+          "precision": 0.7806004618937644,
+          "recall": 0.7511111111111111,
+          "f1-score": 0.7655719139297849,
+          "support": 450.0
+        },
+        "macro avg": {
+          "precision": 0.779839320536995,
+          "recall": 0.7511111111111112,
+          "f1-score": 0.7640747862975745,
+          "support": 450.0
+        },
+        "weighted avg": {
+          "precision": 0.7798393205369949,
+          "recall": 0.7511111111111111,
+          "f1-score": 0.7640747862975744,
+          "support": 450.0
+        }
+      }
+    },
+    "saraga": {
+      "track_count": 25,
+      "release_group_count": 6,
+      "classes_scored": [
+        "Hindustani classical"
+      ],
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "predictions_outside_source_labels": 0,
+      "classification_report": {
+        "Hindustani classical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        }
+      }
+    },
+    "saraga_carnatic": {
+      "track_count": 56,
+      "release_group_count": 5,
+      "classes_scored": [
+        "Carnatic classical"
+      ],
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "predictions_outside_source_labels": 0,
+      "classification_report": {
+        "Carnatic classical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 56.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 56.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 56.0
+        }
+      }
+    }
+  },
+  "three_source_baseline_comparison": {
+    "fma_small": {
+      "same_held_out_track_count": true,
+      "baseline_accuracy": 0.7488888888888889,
+      "four_source_accuracy": 0.7511111111111111,
+      "accuracy_delta": 0.0022222222222221255,
+      "baseline_macro_f1": 0.7622299545143102,
+      "four_source_macro_f1": 0.7640747862975745,
+      "macro_f1_delta": 0.0018448317832643335
+    },
+    "gtzan": {
+      "same_held_out_track_count": true,
+      "baseline_accuracy": 0.8513513513513513,
+      "four_source_accuracy": 0.8175675675675675,
+      "accuracy_delta": -0.03378378378378377,
+      "baseline_macro_f1": 0.8432397493810537,
+      "four_source_macro_f1": 0.8102101539524196,
+      "macro_f1_delta": -0.03302959542863415
+    },
+    "saraga": {
+      "same_held_out_track_count": true,
+      "baseline_accuracy": 1.0,
+      "four_source_accuracy": 1.0,
+      "accuracy_delta": 0.0,
+      "baseline_macro_f1": 1.0,
+      "four_source_macro_f1": 1.0,
+      "macro_f1_delta": 0.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "Carnatic classical",
+    "Hindustani classical",
+    "Western classical",
+    "blues",
+    "country",
+    "disco",
+    "hiphop",
+    "jazz",
+    "metal",
+    "pop",
+    "reggae",
+    "rock"
+  ],
+  "confusion_matrix": [
+    [
+      56,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      9,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      143,
+      1,
+      0,
+      12,
+      0,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      2,
+      11,
+      1,
+      0,
+      108,
+      2,
+      39
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      5,
+      0,
+      6,
+      2,
+      5,
+      24,
+      1,
+      116
+    ]
+  ],
+  "training_tracks_by_source": {
+    "gtzan": 836,
+    "saraga": 80,
+    "fma_small": 2546,
+    "saraga_carnatic": 174
+  },
+  "training_tracks_by_source_and_label": {
+    "gtzan": {
+      "blues": 85,
+      "disco": 84,
+      "jazz": 84,
+      "hiphop": 84,
+      "metal": 78,
+      "Western classical": 85,
+      "country": 85,
+      "reggae": 84,
+      "pop": 83,
+      "rock": 84
+    },
+    "fma_small": {
+      "rock": 849,
+      "pop": 850,
+      "hiphop": 847
+    },
+    "saraga": {
+      "Hindustani classical": 80
+    },
+    "saraga_carnatic": {
+      "Carnatic classical": 174
+    }
+  },
+  "training_windows_by_source": {
+    "gtzan": 836,
+    "saraga": 8251,
+    "fma_small": 2546,
+    "saraga_carnatic": 8657
+  },
+  "train_split_windows_by_source": {
+    "gtzan": 688,
+    "saraga": 6568,
+    "fma_small": 2096,
+    "saraga_carnatic": 7103
+  },
+  "validation_tracks_by_source": {
+    "gtzan": 148,
+    "saraga": 12,
+    "fma_small": 450,
+    "saraga_carnatic": 30
+  },
+  "saraga_carnatic_release_groups_by_split": {
+    "train": 15,
+    "validation": 4,
+    "test": 5
+  },
+  "saraga_carnatic_tracks_by_split": {
+    "test": 56,
+    "train": 144,
+    "validation": 30
+  },
+  "saraga_hindustani_archive_inventory": {
+    "archive_size_bytes": 4109172493,
+    "archive_mtime_ns": 1792670724865170200,
+    "index_sha256": "a3d138a1a0e2cf686ef3cfdf95d2234c905912485544ab2e9a1c35e7040c70f5",
+    "metadata_rows": 108,
+    "indexed_audio_records": 105,
+    "exact_duplicate_records_removed": 0,
+    "missing_audio_records": []
+  },
+  "saraga_carnatic_archive_inventory": {
+    "archive_size_bytes": 14376627433,
+    "archive_mtime_ns": 1792698180588206300,
+    "index_sha256": "e480a0329a7560c974a1b030f1e8e5800a564721aa682051292dbf59dc915a41",
+    "inventory_format_version": 2,
+    "metadata_rows": 249,
+    "indexed_audio_records": 230,
+    "exact_duplicate_records_removed": 0,
+    "missing_audio_records": [
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Muruga Muruga Muruga/Muruga Muruga Muruga",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Chenduril Nindradum Kanda/Chenduril Nindradum Kanda",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Ninne Bhajana/Ninne Bhajana",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Nera Nammiti/Nera Nammiti",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Dinamani Vamsa/Dinamani Vamsa",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Chakkani Raja/Chakkani Raja",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Ardhanareeshwaram/Ardhanareeshwaram",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Pavamana Suthudu Pattu/Pavamana Suthudu Pattu",
+      "V Shankarnarayanan at Arkay by V. Shankaranarayanan/Shloka/Shloka",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Aaniraimekkani/Aaniraimekkani",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Vanajaksha Ninne Kori/Vanajaksha Ninne Kori",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Karuninchutakidi/Karuninchutakidi",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Va Va Brindavana/Va Va Brindavana",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Mati Matiki/Mati Matiki",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Sri Guru Na Palitosmi/Sri Guru Na Palitosmi",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Thoomani Madatthu/Thoomani Madatthu",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Ramabhi Rama Manasu/Ramabhi Rama Manasu",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Mangalam Kosalendraya/Mangalam Kosalendraya",
+      "Sumitra Vasudev at Arkay by Sumithra Vasudev/Sri Vidhya Rajagopala/Sri Vidhya Rajagopala"
+    ]
+  },
+  "saraga_carnatic_cross_source_exact_duplicates_removed": 0,
+  "sample_weight_policy": "Equal total weight per class; equal source share among sources containing that class; within a source/class each track has equal total weight divided over its windows.",
+  "feature_extractors": "Frozen YAMNet and PANNs CNN14 track-window embeddings; only the weighted StandardScaler and LogisticRegression are fitted locally.",
+  "test_set_caveat": "GTZAN/FMA-Small/Hindustani use the previously fixed held-out splits; Saraga Carnatic is held out by release directory. Carnatic remains one source and one label, so this tests release-disjoint recognition within Saraga rather than independent-source generalization.",
+  "confidence_note": "Logistic-regression probabilities are not calibrated confidence values.",
+  "window_policy": {
+    "window_seconds": 30.0,
+    "hop_seconds": 15.0,
+    "max_evenly_spaced_windows_per_track": null,
+    "all_windows_per_track": true,
+    "evaluation_unit": "track; average window probabilities before scoring"
+  },
+  "split_manifests": {
+    "base": "artifacts\\musify_three_dataset_hybrid_v1\\split_manifest.json",
+    "combined": "artifacts\\work_musify_four_dataset_hybrid_v1\\split_manifest.json"
+  }
+}

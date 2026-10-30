@@ -1,0 +1,45 @@
+{
+  "model_type": "yamnet_panns_logistic",
+  "model_variant": "gtzan_fma_saraga_hindustani_carnatic_four_source",
+  "classes": [
+    "Carnatic classical",
+    "Hindustani classical",
+    "Western classical",
+    "blues",
+    "country",
+    "disco",
+    "hiphop",
+    "jazz",
+    "metal",
+    "pop",
+    "reggae",
+    "rock"
+  ],
+  "class_hierarchy": {
+    "Western classical": "Classical",
+    "Hindustani classical": "Classical",
+    "Carnatic classical": "Classical"
+  },
+  "feature_order": [
+    "yamnet_mean_std_max_3072",
+    "panns_cnn14_16k_embedding_2048"
+  ],
+  "feature_dimension": 5120,
+  "selected_features": "hybrid",
+  "sample_rate": 16000,
+  "audio_window_seconds": 30.0,
+  "audio_hop_seconds": 15.0,
+  "max_inference_windows": null,
+  "yamnet_model_path": "artifacts/pretrained/yamnet",
+  "panns_checkpoint_path": "artifacts/pretrained/panns/Cnn14_16k_mAP_0.438.pth",
+  "panns_architecture": "Cnn14_16k",
+  "classifier": "track-balanced StandardScaler + LogisticRegression(C=0.001, track-balanced)",
+  "training_sources": [
+    "GTZAN",
+    "FMA-Small",
+    "Saraga Hindustani",
+    "Saraga Carnatic"
+  ],
+  "training_protocol": "Grid search on validation tracks only; equal-weight mean of source-specific macro-F1 for the four sources. Long-track windows are averaged to one track prediction.",
+  "format_version": 1
+}
